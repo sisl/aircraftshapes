@@ -14,7 +14,7 @@ Aircraft shapes for use with the [PGF/TikZ](https://www.ctan.org/pkg/pgf?lang=en
 \begin{figure}
 \begin{tikzpicture}
 \node [aircraft side,fill=black,minimum width=1cm,rotate=10] at (0,0) {};
-\node [aircraft side,fill=black,minimum width=1cm,xscale=-1] at (10:9) {}; 
+\node [aircraft side,fill=black,minimum width=1cm,xscale=-1] at (5,1) {}; 
 \end{tikzpicture}
 \caption{Aircraft side.}
 \end{figure}
@@ -22,9 +22,9 @@ Aircraft shapes for use with the [PGF/TikZ](https://www.ctan.org/pkg/pgf?lang=en
 \begin{figure}
 	\begin{tikzpicture}
 	\node [aircraft top,fill=black,minimum width=1cm,rotate=30] at (0,0) {};
-	\node [aircraft top,fill=black,minimum width=1cm,xscale=-1] at (10:9) {}; 
+	\node [aircraft top,fill=black,minimum width=1cm,xscale=-1] at (5,1) {}; 
 	\end{tikzpicture}
-	\caption{Aircraft side.}
+	\caption{Aircraft top.}
 \end{figure}
 
 \end{document}
