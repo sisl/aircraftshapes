@@ -3,6 +3,24 @@
 
 \RequirePackage{tikz}
 
+\pgfdeclareshape{quadcopter top}{
+\inheritsavedanchors[from=coordinate]
+\inheritanchor[from=coordinate]{center}
+\backgroundpath{
+\begin{pgfscope}
+\pgftransformshift{\centerpoint}
+\pgfmathdivide{\pgfkeysvalueof{/pgf/minimum width}}{1cm}
+\pgftransformscale{\pgfmathresult}
+\draw (0.26,0.26) circle (0.24);
+\draw (-0.26,-0.26) circle (0.24);
+\draw (0.26,-0.26) circle (0.24);
+\draw (-0.26,0.26) circle (0.24);
+\draw (0.26,0.26) circle (0.21);
+\draw (-0.26,-0.26) circle (0.21);
+\draw (0.26,-0.26) circle (0.21);
+\draw (-0.26,0.26) circle (0.21);
+\draw [fill] (-0.09,-0.09) rectangle (0.09,0.09);
+\end{pgfscope}}}
 
 \pgfdeclareshape{aircraft side}{
 \inheritsavedanchors[from=coordinate]
