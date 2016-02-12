@@ -27,5 +27,14 @@ Aircraft shapes for use with the [PGF/TikZ](https://www.ctan.org/pkg/pgf?lang=en
 	\caption{Aircraft top.}
 \end{figure}
 
+\begin{figure}
+	\centering
+	\begin{tikzpicture}
+	\node [quadcopter top,minimum width=1cm] at (0,0) {};
+	\node [quadcopter top,minimum width=1cm,rotate=20] at (5,1) {}; 
+	\end{tikzpicture}
+	\caption{Quadcopter top.}
+\end{figure}
+
 \end{document}
 ```
