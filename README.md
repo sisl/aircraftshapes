@@ -12,11 +12,11 @@ Aircraft shapes for use with the [PGF/TikZ](https://www.ctan.org/pkg/pgf?lang=en
 \begin{document}
 
 \begin{figure}
-\begin{tikzpicture}
-\node [aircraft side,fill=black,minimum width=1cm,rotate=10] at (0,0) {};
-\node [aircraft side,fill=black,minimum width=1cm,xscale=-1] at (5,1) {}; 
-\end{tikzpicture}
-\caption{Aircraft side.}
+	\begin{tikzpicture}
+	\node [aircraft side,fill=black,minimum width=1cm,rotate=10] at (0,0) {};
+	\node [aircraft side,fill=black,minimum width=1cm,xscale=-1] at (5,1) {}; 
+	\end{tikzpicture}
+	\caption{Aircraft side.}
 \end{figure}
 
 \begin{figure}
