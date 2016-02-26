@@ -19,7 +19,16 @@
 \draw (-0.26,-0.26) circle (0.21);
 \draw (0.26,-0.26) circle (0.21);
 \draw (-0.26,0.26) circle (0.21);
-\draw [fill] (-0.09,-0.09) rectangle (0.09,0.09);
+\draw [fill] (-0.09,-0.09) rectangle (0.09, 0.09);
+\pgftransformrotate{-45}
+\draw [fill] (0.2626955,0.0) ellipse (.10 and .03);
+\draw [fill] (0.4726955, 0.0) ellipse  (.10 and .03);
+\draw [fill] (-0.2626955,0.0) ellipse (.10 and .03);
+\draw [fill] (-0.4726955, 0.0) ellipse  (.10 and .03);
+\draw [fill] (0.0,-0.2626955) ellipse (.03 and .10);
+\draw [fill] (0.0,-0.4726955) ellipse  (.03 and .10);
+\draw [fill] (0.0,0.2626955) ellipse (.03 and .10);
+\draw [fill] (0.0,0.4726955) ellipse  (.03 and .10);
 \end{pgfscope}}}
 
 \pgfdeclareshape{aircraft side}{
