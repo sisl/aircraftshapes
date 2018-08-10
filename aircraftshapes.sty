@@ -31,6 +31,23 @@
 \draw [fill] (0.0,0.4726955) ellipse  (.03 and .10);
 \end{pgfscope}}}
 
+\pgfdeclareshape{quadcopter side}{
+\inheritsavedanchors[from=coordinate]
+\inheritanchor[from=coordinate]{center}
+\backgroundpath{
+\begin{pgfscope}
+\pgftransformshift{\centerpoint}
+\pgfmathdivide{\pgfkeysvalueof{/pgf/minimum width}}{1cm}
+\pgftransformscale{\pgfmathresult}
+\draw [fill] (-0.09,-0.09) rectangle (0.09, 0.09);
+\draw [fill] (0.2626955,0.0) ellipse (.10 and .03);
+\draw [fill] (0.4726955, 0.0) ellipse  (.10 and .03);
+\draw [fill] (-0.2626955,0.0) ellipse (.10 and .03);
+\draw [fill] (-0.4726955, 0.0) ellipse  (.10 and .03);
+\draw (0,-0.09) -- (-0.37,-0.09) -- (-0.37, 0.0);
+\draw (0,-0.09) -- (0.37,-0.09) -- (0.37, 0.0);
+\end{pgfscope}}}
+
 \pgfdeclareshape{aircraft side}{
 \inheritsavedanchors[from=coordinate]
 \inheritanchor[from=coordinate]{center}
